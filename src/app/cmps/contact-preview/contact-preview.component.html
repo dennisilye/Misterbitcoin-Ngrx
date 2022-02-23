@@ -1,0 +1,18 @@
+<mat-card class="contact-preview"  style="max-width: 220px">
+  <img
+    mat-card-image
+    src="https://robohash.org/{{ contact._id }}?set=set4"
+    alt=""
+  />
+  <section class="info">
+    <mat-card-title class="contact-name">{{ contact.name }}</mat-card-title>
+    <mat-card-subtitle>{{ contact.email }}</mat-card-subtitle>
+    <mat-card-actions class="actions-container">
+      <!-- <a href="" (click)="goToEdit($event, contact)">Edit </a>
+      <button (click)="onRemove.emit(contact._id)" mat-button color="warn">
+        X
+      </button> -->
+      <ng-content></ng-content>
+    </mat-card-actions>
+  </section>
+</mat-card>

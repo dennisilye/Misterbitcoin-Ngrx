@@ -1,0 +1,10 @@
+<section class="contact-container">
+  <app-contact-preview *ngFor="let contact of contacts" [contact]="contact">
+    <section class="actions-container flex space-between">
+      <button (click)="remove(contact._id)" mat-button color="warn">x</button>
+      <button (click)="editContact(contact._id)" mat-button color="link">
+        Edit
+      </button>
+    </section>
+  </app-contact-preview>
+</section>

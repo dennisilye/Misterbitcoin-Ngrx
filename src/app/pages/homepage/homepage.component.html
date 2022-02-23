@@ -1,0 +1,31 @@
+<section class="homepage">
+  <div class="user-info-container">
+    <div *ngIf="user.name; else signup" class="user-info">
+      <h2>Hello {{ user.name }}</h2>
+      <button mat-raised-button color="accent" (click)="onLogout()" class="btn warning">Sign out</button>
+    </div>
+    <ng-template #signup>
+      <h1>Please Signup</h1>
+      <form (ngSubmit)="onSignup()" class="user-info-signup">
+        <mat-form-field appearance="fill">
+          <mat-label  for="signup">Name: </mat-label>
+          <input
+            matInput
+            focus
+            type="text"
+            id="signup"
+            name="name"
+            [(ngModel)]="userName"
+          />
+        </mat-form-field>
+        <button mat-raised-button color="primary">Sign up</button>
+      </form>
+    </ng-template>
+    <!-- <move-list
+      [moves]="lastMoves"
+      [title]="'Last moves:'"
+      [isShowTo]="true"
+      [moveClass]="'last-moves'"
+    ></move-list> -->
+  </div>
+</section>

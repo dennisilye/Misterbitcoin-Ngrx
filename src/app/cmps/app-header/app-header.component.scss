@@ -1,0 +1,20 @@
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #6200ee;
+    margin-bottom: 30px;
+    color: white;
+    h1 {
+        margin-bottom: 0;
+    }
+    .logo {
+        flex-grow: 1;
+        font-size: 1.2em;
+    }
+
+    .app-nav {
+        display: flex;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,9 @@
+<section class="bitcoin-app">
+  <a routerLink="edit">Add Contact</a>
+  <app-contact-list
+    (onRemove)="onRemoveContact($event)"
+    (onSelect)="onSelect($event)"
+    [contacts]="contacts$ | async"
+  ></app-contact-list>
+  <router-outlet></router-outlet>
+</section>

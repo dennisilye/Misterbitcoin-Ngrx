@@ -1,0 +1,18 @@
+.contact-preview {
+  &:hover {
+    .preview-delete {
+      visibility: visible;
+    }
+  }
+  .contact-name {
+    font-size: 1.4em;
+  }
+  .preview-delete {
+    visibility: hidden;
+    color: red;
+  }
+ 
+
+
+ 
+}

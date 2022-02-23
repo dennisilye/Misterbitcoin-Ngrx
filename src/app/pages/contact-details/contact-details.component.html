@@ -1,0 +1,13 @@
+<section *ngIf="contact"  class="contact-details">
+  <img src="https://robohash.org/{{ contact._id }}?set=set4" alt="" />
+  <div>
+    <h1>Name: {{ contact.name  }}</h1>
+    <hr />
+    <h1>Email: {{ contact.email }}</h1>
+    <hr />
+    <h1>Phone: {{ contact.phone }}</h1>
+  </div>
+  <a [routerLink]="['/']" class="capitalize button">
+    go back to list
+</a>
+</section>
